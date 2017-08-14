@@ -23,11 +23,12 @@ public class Exposer {
     //秒杀结束时间
     private long end;
 
-    public Exposer(boolean exposed, long now, long state, long end) {
+    public Exposer(boolean exposed, long seckillId, long now, long state, long end) {
         this.exposed = exposed;
         this.now = now;
         this.state = state;
         this.end = end;
+        this.seckillId = seckillId;
     }
 
     public Exposer(boolean exposed, String md5, long seckillId) {
